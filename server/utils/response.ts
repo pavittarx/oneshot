@@ -14,11 +14,7 @@ export function Success(message: string, code = 200) {
   };
 }
 
-type ResponseData = {
-  [key: string]: string;
-};
-
-export function Result(data: ResponseData, code = 200) {
+export function Result(data: unknown, code = 200) {
   return {
     success: true,
     status: code,
