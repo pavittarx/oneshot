@@ -4,7 +4,7 @@
   "description": "assignment for oneshot",
   "main": "index.js",
   "scripts": {
-    "server": "tsnd -r tsconfig-paths/register --respawn server/index --cls",
+    "server": "ts-node-dev -r tsconfig-paths/register --respawn src/index --cls",
     "app": ""
   },
   "repository": {
